@@ -5,7 +5,7 @@
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath*:spring/context-*.xml</param-value>
+		<param-value>classpath*:smarthomepage/com/spring/context-*.xml</param-value>
 	</context-param>
 	
 	<!-- Context자동로드 리스너  -->
@@ -19,7 +19,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/spring/appServlet/controller-*.xml</param-value>
+			<param-value>/WEB-INF/smarthomepage/com/spring/*-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
@@ -30,8 +30,7 @@
 	</servlet-mapping>
 		
 
-	<!-- 03-03-화요일 맨마지막문단에 한글 인코딩추가 -->
-	<!-- 한글 변환 필터 -->
+	
 	  <filter>
 	    <filter-name>encodingFilter</filter-name>
 	    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
