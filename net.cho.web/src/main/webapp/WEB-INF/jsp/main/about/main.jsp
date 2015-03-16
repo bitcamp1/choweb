@@ -19,7 +19,7 @@
 <body>
 	<div class="wrap">
 		<div class="header">
-			<jsp:include page="../common/header.jsp" />
+	<%-- 		<jsp:include page="../common/header.jsp" /> --%>
 		</div>
 		
 		<div class="member-grids">
@@ -68,7 +68,7 @@
 		</div>
 	</div>
 	<div class="clients-slider">
-		<jsp:include page="../common/bottom.jsp" />
+		<%-- <jsp:include page="../common/bottom.jsp" /> --%>
 	</div>
 
 

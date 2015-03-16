@@ -47,12 +47,12 @@
     <!-- 각페이지 Header Start--> 
     
     <!--/각페이지 Header End--> 
-   		<jsp:include page="/views/main/script.jsp"/>
+   		<%-- <jsp:include page="/views/main/script.jsp"/>
 
-		<jsp:include page="/views/main/top_ad.jsp" />
+		<jsp:include page="/views/main/top_ad.jsp" /> --%>
 	<!-- Header -->
 	<div id="header">
-		<jsp:include page="/views/main/header.jsp" />
+	<%-- 	<jsp:include page="/views/main/header.jsp" /> --%>
 	</div>
 	<!-- /Header -->
 	<!-- Contaniner -->

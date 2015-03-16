@@ -45,7 +45,7 @@
     <!-- 각페이지 Header Start--> 
     
     <!--/각페이지 Header End--> 
-   <jsp:include page="/views/movie/script.jsp" />
+   <jsp:include page="script.jsp" />
     <script type="text/javascript" src="https://nsso.cjone.com/findCookieSecured.jsp?cjssoq=WEoF3EFVsYeM1G7IULlNBONIA9HrsVgkwvfdWUVCvjN55eI8AV%2brrMDQBis8Vb8h6%2bi8Rd97vfaesjlaSfqcSWpDNkkwQ2NROE5vWXpLSm9QZTI0ajdxY1ludnBpOWxFaWZ0eGRaR041K0JiNjlNbkc0bDRsKy83eWI2dExPZ0s%3d"></script>
 </head>
 <body class="">
@@ -81,7 +81,7 @@
     </div>    
 	<!-- Header -->
 	<div id="header">
-		<jsp:include page="/views/main/header.jsp" />
+		<jsp:include page="../../cmm/layout/header.jsp" />
 	</div>
 	<!-- /Header -->
 	<!-- Contaniner -->
@@ -865,7 +865,7 @@
 	<!-- /Contaniner -->
 	<!-- Footer -->
 	<div id="footer">
-		<jsp:include page="/views/main/footer.jsp" />
+		<jsp:include page="../../cmm/layout/bottom.jsp" />
     
 </div>
 

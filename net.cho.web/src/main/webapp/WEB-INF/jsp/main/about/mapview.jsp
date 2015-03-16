@@ -26,7 +26,7 @@
 	<body>
 	<div class="wrap">
 		<div class="header">
-			<jsp:include page="../common/header.jsp" />
+			<%-- <jsp:include page="../common/header.jsp" /> --%>
 		</div>
 		<div class="map" style="margin-left: 10%; margin-right: 20%;">
 			<b><h1>찾아 오시는 길 &nbsp;&nbsp;ye:SOOL 신촌점</h1></b> <br>

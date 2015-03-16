@@ -14,12 +14,12 @@
     <meta name="keywords" content="CGV, 시지브이, 영화관, 극장, 영화, 티켓, 박스오피스, 극장, Movie, Theater, Cinema, Cgv, cgv, 예매, 상영작" />
     <meta name="description" content="CGV는 선진화된 관람문화와 최고의 서비스로 고객에게 잊을 수 없는 감동을 선사합니다. CGV홈페이지를 통해 영화 예매뿐만 아니라 그 이상의 서비스와 감동을 전달하고, 다양한 즐거움과 특별한 경험을 제공하고자 합니다." />
     <meta property="og:site_name" content="영화 그 이상의 감동. CGV"/>
-    <meta id="ctl00_og_title" property="og:title" content="회원가입 &lt; 회원서비스 | 영화 그 이상의 감동. CGV"></meta>
+    <meta id="ctl00_og_title" property="og:title" content="로그인 &lt; 회원서비스 | 영화 그 이상의 감동. CGV"></meta>
 	<meta id="ctl00_og_description" property="og:description" content=""></meta> 
     <meta id="ctl00_og_image" property="og:image" content="http://img.cgv.co.kr/common/cgv_200x200.jpg"></meta>
 
     <link rel="shortcut icon" href="http://img.cgv.co.kr/theater_img/favicon.ico" type="image/x-icon" />
-    <title id="ctl00_headerTitle">회원가입 &lt; 회원서비스 | 영화 그 이상의 감동. CGV</title>
+    <title id="ctl00_headerTitle">로그인 &lt; 회원서비스 | 영화 그 이상의 감동. CGV</title>
     <link rel="shortcut icon" type="image/x-icon" href="http://img.cgv.co.kr/R2014/images/favicon.ico" />
     <link rel="stylesheet" media="all" type="text/css" href="http://img.cgv.co.kr/R2014/css/reset.css" />
     <link rel="stylesheet" media="all" type="text/css" href="http://img.cgv.co.kr/R2014/css/layout.css" />
@@ -44,9 +44,8 @@
     
     <!-- 각페이지 Header Start--> 
     
-
     <!--/각페이지 Header End--> 
-   	<jsp:include page="/views/sign/script.jsp" />
+    <jsp:include page="script.jsp" />
     
 </head>
 <body class="">
@@ -67,7 +66,7 @@
     </div>    
 	<!-- Header -->
 	<div id="header">
-		<jsp:include page="/views/main/header.jsp" />
+		<jsp:include page="../layout/header.jsp" />
 	</div>
 	<!-- /Header -->
 	<!-- Contaniner -->
@@ -75,8 +74,9 @@
 
         <!-- LineMap -->
 
-        <div id="ctl00_navigation_line" class="linemap-wrap">
-            <jsp:include page="/views/sign/linemap.jsp" />
+        <jsp:include page="linemap.jsp" />
+        <!-- //LineMap -->
+
 		<!-- Contents Area -->
 		<div id="contents" class="">
             
@@ -84,41 +84,72 @@
 			
 
 <!-- 실컨텐츠 시작 -->
-<div class="wrap-join">
-    <div class="sect-join">
-        <div class="h-join">
-            <h3 class="hidden">영화 그 이상의 감동! CGV에 오신걸 환영합니다. </h3>
-            <p>국내 최초로 멀티플렉스 개념을 도입하여 영화관람의 새로운 트렌드를 이끌어 온 CGV는 <br />
-			고객을 향한 온리 원 서비스와 최고의 운영노하우로 글로벌 문화, 엔터테인먼트 플랫폼으로 도약하고 있습니다. </p>
+<div class="wrap-login">
+    <div class="sect-login">
+		<jsp:include page="loginform.jsp" />      
+     </div>
+</div>    
+    <div class="sect-loginguide">
+        <div class="box-useguide">
+            <strong>CJ ONE 회원이 아니신가요?</strong>
+            <span>회원가입하시고 다양한 혜택을 누리세요!</span>
+            <strong>
+                <a title="새창" target="_blank" href="https://www.cjone.com/cjmportal/hpuf01T1Form.do?coopco_cd=7010&brnd_cd=1000" class="round red"><span>CJ ONE 회원가입하기</span></a>
+            </strong>
+            <em>
+                <a href="/user/login/ipin-guide.aspx" class="round black"><span>아이핀 회원 안내</span></a>
+            </em>
+            <em>
+                <a href="/user/cjone/" class="round black"><span>CJ ONE 멤버십이란?</span></a>
+            </em>
         </div>
-        <div class="box-joininfo">
-            <div class="box-inner">
-                <h4>CGV + CJ ONE 통합회원가입안내 <a href="http://www.cjone.com/cjmportal/hpmf01Q2Form.do?coopco_cd=7010&brnd_cd=1000" target="_blank" title="새창" class="round gray"><span>혜택상세보기</span></a></h4>
-                <p>CGV는 CJ ONE의 제휴 브랜드이며, CJ ONE 통합 회원으로 가입하시면 CGV와 CJ ONE의 서비스를 모두 이용하실 수 있습니다.  <br />
-                CJ ONE 통합 회원은 CJ ONE 제휴 브랜드 상품/서비스 구매 시 0.1% ~ 5% CJ ONE 포인트 적립혜택을 누리실 수 있습니다. <br />
-                적립된 CJ ONE 포인트는 모든 CJ ONE 제휴 브랜드 매장에서 현금처럼 사용 가능합니다. </p>
-            </div>
-        </div>
-        <a href="#" target="_blank" title="새창" class="link-join">CGV + CJONE 통합회원 가입</a>
     </div>
-    <div class="sect-alliance">
-        <h4>주요 제휴 브랜드 안내 <em>(2013년 6월 기준)</em></h4>
-        <p>CGV, 뚜레쥬르, 빕스, CJ오쇼핑, CJmall, tving, 헬로모바일, Mnet, 올리브영, CJ온마트,투썸플레이스, 비비고, 콜드스톤크리머리, 차이나팩토리, 씨푸드오션, <br />
-        피셔스마켓, 더플레이스, 로코커리, 제일제면소,빕스 버거, MPub, CJ푸드월드, 더 스테이크 하우스 바이 빕스, <br />
-        CJ THE KITCHEN, CJ E&amp;M, 차이나팩토리 딜라이트, 마이 캐치온, CJ월디스, <br />
-        CJ에듀케이션즈 나는생각,  CJ E&amp;M 공연 예매 서비스, 계절밥상 <br />
-        </p>
-        <dl class="box-operationguide">
-            <dt>이용안내</dt>
-            <dd>아이핀 인증 회원 가입 안내</dd>
-            <dd>- CJ ONE 회원 가입 시 아이핀 회원가입을 선택할 수 있습니다.</dd>
-            <dd>-  아이핀 인증 회원 가입의 경우, The CJ카드 관련서비스(적립금 지급, 할인쿠폰 다운로드)가 불가합니다.   </dd>
-            <dd><a href="/user/login/ipin-guide.aspx" class="round black"><span>아이핀회원 안내</span></a></dd>
-        </dl>
+    <div class="sect-loginad"  style="background:#d2cbbe;">
+        <div>
+           <iframe src="http://ad.cgv.co.kr/NetInsight/html/CGV/CGV_201401/sub@Login_bigbanner" width="350" height="300" title="" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" name="Login_bigbanner" id="Login_bigbanner"></iframe>
+        </div>
     </div>
 </div>
 <!-- 실컨텐츠 끝 --> 
 
+<!-- LogIn -->
+<form name="loginform" id="loginform" method="post" action="https://www.cgv.co.kr/user/login/login.aspx" novalidate="novalidate">
+	<input type="hidden" name="id" id="id" />
+	<input type="hidden" name="password" id="password" />
+    <input type="hidden" name="id_save" id="id_save" />
+	<input type="hidden" name="returnURL" value="http://www.cgv.co.kr/movies/Default.aspx" />
+</form>
+<!-- //LogIn -->
+
+<script type="text/javascript" src="http://img.cgv.co.kr/R2014//js/system/crypto.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+    (function ($) {
+        $(function () {
+
+
+            var $frm = $('#form1');
+            $frm.validate({
+                submitHandler: function (form) {
+                    var $loginFrm = $('#loginform');
+
+                    if ($("input[id=save_id]").is(":checked")) {
+                        $loginFrm.find('#id_save').val("true");
+                    } else {
+                        $loginFrm.find('#id_save').val("false");
+                    }
+
+                    $loginFrm.find('#id').val(app.crypto.AESEncryptToBase64($frm.find('#txtUserId').val()));
+                    $loginFrm.find('#password').val(app.crypto.AESEncryptToBase64($frm.find('#txtPassword').val()));
+
+                    $loginFrm.submit();
+                    return false;
+                }
+            });
+        });
+    })(jQuery);
+//]]>
+</script>
 
             <!--/ Contents End -->
 
@@ -128,27 +159,7 @@
 	<!-- /Contaniner -->
 	<!-- Footer -->
 	<div id="footer">
-		<jsp:include page="/views/main/footer.jsp" />
-	</div>
-	<!-- /Footer -->
-
-    <!-- Aside Banner :  -->
-	<div id="ctl00_sect_person_right" class="sect-aside-banner" style="padding:0; margin:0; position:fixed; z-index:1;">
-		<div class="aside-content-top">
-			<div class="aside-content-btm">
-				<a href="/theaters/" onclick="setClickLog('/서브/퀵링크/CGV극장');"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_theater.gif" alt="CGV THEATER" /></a>
-				<a href="/arthouse/" onclick="setClickLog('/서브/퀵링크/CGV이벤트');"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_arthouse.gif" alt="CGV arthouse" /></a>
-				<a href="/theaters/special/" onclick="setClickLog('/서브/퀵링크/CGV특별관');"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_special.gif" alt="CGV SPECIAL" /></a>
-				<a href="http://phototicket.cgv.co.kr/" target="_blank"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_phototicket.gif" alt="CGV 포토티켓" /></a>
-				<a href="/user/mycgv/reserve/" class="required-login" data-url="/user/mycgv/reserve/" onclick="setClickLog('/서브/퀵링크/CGV예매내역');"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_ticket.gif" alt="CGV TICKET INFO" /></a>
-				<a href="http://section.cgv.co.kr/discount/Special/discount/Default.aspx" onclick="setClickLog('/서브/퀵링크/CGV할인정보');"><img src="http://img.cgv.co.kr/R2014/images/common/btn/btn_person_discount.gif" alt="CGV DISCOUNT INFO" /></a>
-			</div>
-		</div>
-		<div class="btn-top">
-			<a href="#" onclick="scrollTo(0,0);return false;" onclick="setClickLog('/서브/퀵링크/TOP버튼);"><span>최상단으로 이동</span></a>
-		</div>
-	</div>
-	<!-- //Aside Banner -->
+		<jsp:include page="../layout/bottom.jsp" />
     
 </div>
 
