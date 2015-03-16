@@ -9,7 +9,9 @@
 	<configs>
 	</configs>
 	<autoconfigs>
-		<config>src/main/webapp/WEB-INF/spring/appServlet/controller-board.xml</config>
+		<config>src/main/resources/smarthomepage/com/spring/context-datasource.xml</config>
+		<config>src/main/resources/smarthomepage/com/spring/context-dao.xml</config>
+		<config>src/main/resources/smarthomepage/com/spring/context-mybatis.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
