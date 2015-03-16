@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aa">
+	
+	<insert id="joinMember" parameterType="net.cho.web.model.MemberVo">
+		insert into member values(
+		#{email}, #{passwd}, #{name}, #{mobile})
+	</insert>
+	
+	<select id="selectAllMembers" resultType="net.cho.web.model.MemberVo">
+		select  * from  member 
+	</select>
+	
+	<select id="detailMember" resultType="net.cho.web.model.MemberVo" parameterType="net.cho.web.model.MemberVo">
+		select  * from member  where  email = #{email}
+	</select>
+	
+	<select id="deleteMember" resultType="net.cho.web.model.MemberVo" parameterType="net.cho.web.model.MemberVo">
+		delete from member  where  email = #{email}
+	</select>
+	
+	<update id="editMember" parameterType="net.cho.web.model.MemberVo">
+		update member set passwd=#{passwd}, mobile=#{mobile}
+		where email=#{email} 
+	</update>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
