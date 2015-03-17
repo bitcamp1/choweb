@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-		
+	<!--
+    수정일          수성자                          수정내용
+   ==========      ========      =================================================
+   2011.9.19        이기하         filter 정리
+   2013.5.31        이기하         미사용 filter 정리(.mdo, .action)
+
+  ************************************************************************************************
+    0. 로그인 정책 컴포넌트용 필터 : 설정
+    1. 스프링 시큐리티 설정 : 설정
+    2. EgovSSO 로그인/로그아웃 설정을 위한 필터 설정 : 설정
+    3. Spring Security 로그인/로그아웃 설정을 위한 필터 설정 : 설정
+  ************************************************************************************************
+-->	
+	<display-name>Smart-Homepage</display-name>
 	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath*:smarthomepage/com/spring/context-*.xml</param-value>
-	</context-param>
+	  <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath*:smarthomepage/com/spring/**/context-*.xml</param-value>
+    </context-param>
 	
 	<!-- Context자동로드 리스너  -->
 	<listener>
@@ -19,7 +32,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>/WEB-INF/smarthomepage/com/spring/*-context.xml</param-value>
+			<param-value>/WEB-INF/config/smarthomepage/com/spring/*-context.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
