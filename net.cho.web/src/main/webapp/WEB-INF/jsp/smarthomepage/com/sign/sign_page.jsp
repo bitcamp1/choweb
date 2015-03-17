@@ -67,7 +67,7 @@
     </div>    
 	<!-- Header -->
 	<div id="header">
-		<jsp:include page="../layout/header.jsp" />
+		<jsp:include page="../main_head.jsp" />
 	</div>
 	<!-- /Header -->
 	<!-- Contaniner -->
@@ -128,7 +128,7 @@
 	<!-- /Contaniner -->
 	<!-- Footer -->
 	<div id="footer">
-		<jsp:include page="../layout/bottom.jsp" />
+		<jsp:include page="../main_bottom.jsp" />
 	</div>
 	<!-- /Footer -->
 

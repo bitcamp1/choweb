@@ -72,19 +72,19 @@
 <input type="hidden" id="isVip" name="isVip" value="N" />
 <div class="sect-common">
 	<div class="slider" id="slider">
-		<jsp:include page="/views/main/slider.jsp" />
+		<%-- <jsp:include page="/views/main/slider.jsp" /> --%>
 	</div>
 </div>
-	<jsp:include page="/views/main/content.jsp"></jsp:include>
+	<%-- <jsp:include page="/views/main/content.jsp"></jsp:include> --%>
 <div class="sect-event">
-	<jsp:include page="/views/main/event.jsp" />
+	<%-- <jsp:include page="/views/main/event.jsp" /> --%>
 </div>
 <div class="cols-banner">
-	<jsp:include page="/views/main/advertisement.jsp" />
+	<%-- <jsp:include page="/views/main/advertisement.jsp" /> --%>
 </div>
 
 <div id="ctl00_PlaceHolderContent_wrap_notice" class="sect-notice-info cf">
-	<jsp:include page="/views/main/notice.jsp" />
+	<%-- <jsp:include page="/views/main/notice.jsp" /> --%>
 </div>
 
             <!--/ Contents End -->
@@ -95,7 +95,7 @@
 	<!-- /Contaniner -->
 	<!-- Footer -->
 	<div id="footer">
-		<jsp:include page="/views/main/footer.jsp"></jsp:include>
+		<%-- <jsp:include page="/views/main/footer.jsp"></jsp:include> --%>
 	</div>
 	<!-- /Footer -->
 

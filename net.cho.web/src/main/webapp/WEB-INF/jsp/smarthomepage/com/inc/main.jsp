@@ -47,12 +47,12 @@
     <!-- 각페이지 Header Start--> 
     
     <!--/각페이지 Header End--> 
-   		<jsp:include page="/views/main/script.jsp"/>
+   		<%-- <jsp:include page="/views/main/script.jsp"/> --%>
 
-		<jsp:include page="/views/main/top_ad.jsp" />
+		<%-- <jsp:include page="/views/main/top_ad.jsp" /> --%>
 	<!-- Header -->
 	<div id="header">
-		<jsp:include page="/views/main/header.jsp" />
+		<%-- <jsp:include page="/views/main/header.jsp" /> --%>
 	</div>
 	<!-- /Header -->
 	<!-- Contaniner -->
@@ -75,16 +75,16 @@
 		<jsp:include page="slider.jsp" />
 	</div>
 </div>
-	<jsp:include page="/views/main/content.jsp"></jsp:include>
+	<%-- <jsp:include page="/views/main/content.jsp"></jsp:include> --%>
 <div class="sect-event">
-	<jsp:include page="/views/main/event.jsp" />
+	<%-- <jsp:include page="/views/main/event.jsp" /> --%>
 </div>
 <div class="cols-banner">
-	<jsp:include page="/views/main/advertisement.jsp" />
+	<%-- <jsp:include page="/views/main/advertisement.jsp" /> --%>
 </div>
 
 <div id="ctl00_PlaceHolderContent_wrap_notice" class="sect-notice-info cf">
-	<jsp:include page="/views/main/notice.jsp" />
+	<%-- <jsp:include page="/views/main/notice.jsp" /> --%>
 </div>
 
             <!--/ Contents End -->
@@ -95,7 +95,7 @@
 	<!-- /Contaniner -->
 	<!-- Footer -->
 	<div id="footer">
-		<jsp:include page="/views/main/footer.jsp"></jsp:include>
+		<%-- <jsp:include page="/views/main/footer.jsp"></jsp:include> --%>
 	</div>
 	<!-- /Footer -->
 

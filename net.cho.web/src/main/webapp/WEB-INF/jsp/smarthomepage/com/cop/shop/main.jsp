@@ -36,7 +36,7 @@
 <body>
 	<div class="wrap">
 		<div class="header">
-			<jsp:include page="../../cmm/layout/header.jsp" />
+			<jsp:include page="../../main_head.jsp" />
 		</div>
 		<div id="main-menu" style='width: 100%;'>
 			<jsp:include page="main_menu.jsp" />
@@ -67,7 +67,7 @@
 		<div class="extra"> <!-- Center _ right _ images start -->
 		<jsp:include page="right_menu.jsp" />		
 	</div> <!-- Center _ right _ images end -->		
-		<jsp:include page="../../cmm/layout/bottom.jsp" />
+		<jsp:include page="../../main_bottom.jsp" />
 	</div>
 </body>
 </html>

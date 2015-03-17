@@ -26,7 +26,7 @@
 <body>
 	<div class="wrap">
 		<div class="header">
-			<jsp:include page="../../../cmm/layout/header.jsp" />
+			<jsp:include page="../../../main_head.jsp" />
 		</div>
 	
 		<div class='container'>
@@ -46,7 +46,7 @@
 		
 		
 
-		<jsp:include page="../../../cmm/layout/bottom.jsp" />
+		<jsp:include page="../../../main_bottom.jsp" />
 	
 </body>
 </html>

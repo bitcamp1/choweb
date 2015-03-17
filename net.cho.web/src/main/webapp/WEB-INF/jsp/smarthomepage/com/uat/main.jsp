@@ -33,7 +33,7 @@
 
 	<div class="wrap">
 		<div class="header">
-			<jsp:include page="../layout/header.jsp" />
+			<jsp:include page="../main_head.jsp" />
 		</div>
 		<div id="container">
 				<div class="content_admin">			
@@ -75,6 +75,6 @@
 		</div>
 
 
-		<jsp:include page="../layout/bottom.jsp" />
+		<jsp:include page="../main_bottom.jsp" />
 </body>
 </html>
